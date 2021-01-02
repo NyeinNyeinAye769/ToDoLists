@@ -32,4 +32,8 @@
         android:id="@+id/logout"
         android:icon="@android:drawable/ic_lock_power_off"
         android:title="@string/logout" />
+    <item
+        android:id="@+id/zawpaing"
+        android:icon="@android:drawable/ic_btn_speak_now"
+        android:title="ZawPaing"/>
 </menu>
