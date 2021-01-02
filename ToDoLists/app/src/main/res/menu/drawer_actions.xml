@@ -37,4 +37,12 @@
         android:id="@+id/jeanMenu"
         android:icon="@android:drawable/ic_lock_power_off"
         android:title="Ingyinn" />
+    <item
+        android:id="@+id/todo1"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="nyeinnyeinaye" />
+    <item
+        android:id="@+id/thitMenu"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Thit Lwin" />
 </menu>
