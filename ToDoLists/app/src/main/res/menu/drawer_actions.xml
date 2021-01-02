@@ -32,4 +32,8 @@
         android:id="@+id/logout"
         android:icon="@android:drawable/ic_lock_power_off"
         android:title="@string/logout" />
+    <item
+        android:id="@+id/todo1"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="nyeinnyeinaye" />
 </menu>
