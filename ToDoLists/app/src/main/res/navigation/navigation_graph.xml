@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigationGraph"
+    app:startDestination="@id/login_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.example.todolists.ui.login.LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_fragment_to_register_fragment"
+            app:destination="@id/register_fragment" />
+        <action
+            android:id="@+id/action_login_fragment_to_home_fragment"
+            app:destination="@id/home_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/register_fragment"
+        android:name="com.example.todolists.ui.user_register.RegistrationFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_register_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+        <action
+            android:id="@+id/action_register_fragment_to_home_fragment"
+            app:destination="@id/home_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.example.todolists.ui.Home.HomeFragment"
+        tools:layout="@layout/fragment_home_task">
+        <action
+            android:id="@+id/action_home_fragment_to_add_tasks_fragment"
+            app:destination="@id/add_tasks_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_edit_task_fragment"
+            app:destination="@id/edit_task_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_tasks_fragment"
+        android:name="com.example.todolists.ui.AddTasks.AddTaskFragment"
+        tools:layout="@layout/fragment_add_tasks">
+        <action
+            android:id="@+id/action_add_tasks_fragment_to_home_fragment"
+            app:destination="@id/home_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/edit_task_fragment"
+        android:name="com.example.todolists.ui.EditTasks.EditTaskFragment"
+        tools:layout="@layout/fragment_edit_task">
+
+        <argument
+            android:name="taskId"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="task"
+            app:argType="com.example.todolists.data.model.Task" />
+
+    </fragment>
+
+</navigation>
