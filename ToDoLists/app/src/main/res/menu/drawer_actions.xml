@@ -37,4 +37,10 @@
         android:id="@+id/thitwin"
         android:icon="@android:drawable/ic_lock_power_off"
         android:title="Thit Lwin" />
+
+    <item
+        android:id="@+id/zaw_paing"
+        android:icon="@android:drawable/ic_btn_speak_now"
+        android:title="Zaw Paing"/>
+
 </menu>
