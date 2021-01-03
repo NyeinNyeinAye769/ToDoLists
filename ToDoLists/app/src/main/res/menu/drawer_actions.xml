@@ -34,15 +34,8 @@
         android:title="@string/logout" />
 
     <item
-        android:id="@+id/jeanMenu"
+        android:id="@+id/jean"
         android:icon="@android:drawable/ic_lock_power_off"
-        android:title="Ingyinn" />
-    <item
-        android:id="@+id/todo1"
-        android:icon="@android:drawable/ic_lock_power_off"
-        android:title="nyeinnyeinaye" />
-    <item
-        android:id="@+id/thitMenu"
-        android:icon="@android:drawable/ic_lock_power_off"
-        android:title="Thit Lwin" />
+        android:title="Ingyinn Swe" />
+
 </menu>
