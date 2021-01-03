@@ -16,6 +16,9 @@ interface TaskDao {
     @Update(onConflict = OnConflictStrategy.REPLACE)
     suspend fun update(task: Task)
 
-    @Query("SELECT * FROM Task")
+    @Query("DELETE FROM Task WHERE tasks = :task")
+    suspend fun deleteTask(task:Task)
+
+    @Query("SELECT * FROM Task WHERE tasks = :tasks")
     fun getAllTasks():  LiveData<List<Task>>
 }

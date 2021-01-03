@@ -19,8 +19,8 @@ class TaskRepository @Inject constructor(
         taskDao.update(task)
     }
 
-    override suspend fun deleteTask(taskId: String) {
-        TODO("Not yet implemented")
+    override suspend fun deleteTask(task: Task) {
+       taskDao.deleteTask(task)
     }
 
     override fun getAllTaskList(): LiveData<List<Task>> {

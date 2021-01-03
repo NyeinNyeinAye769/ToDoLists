@@ -1,4 +1,4 @@
-package com.example.todolists.ui.AddTasks
+package com.example.todolists.ui.DeleteTasks
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -15,9 +15,9 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class AddTaskFragment : Fragment() {
+class DeleteTaskFragment : Fragment() {
 
-    private val viewModelTask: AddTaskFragmentViewModel by viewModels()
+    private val viewModelTask: DeleteTaskFragmentViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
