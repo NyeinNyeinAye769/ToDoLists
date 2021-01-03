@@ -70,8 +70,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <androidx.recyclerview.widget.RecyclerView
-                    xmlns:tools="http://schemas.android.com/tools"
+                <androidx.recyclerview.widget.RecyclerView xmlns:tools="http://schemas.android.com/tools"
                     android:id="@+id/recyclerTaskList"
                     android:name="com.example.todolists.ui.Home.HomeFragment"
                     android:layout_width="match_parent"

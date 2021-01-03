@@ -25,13 +25,14 @@
         android:icon="@android:drawable/checkbox_on_background"
         android:title="@string/completed_tasks" />
     <item
-        android:id="@+id/umcomplete_task"
+        android:id="g@+id/umcomplete_task"
         android:icon="@android:drawable/ic_delete"
         android:title="@string/umcomplete_tasks" />
     <item
         android:id="@+id/logout"
         android:icon="@android:drawable/ic_lock_power_off"
         android:title="@string/logout" />
+
 
     <item
         android:id="@+id/todo1"
@@ -42,5 +43,11 @@
         android:id="@+id/jean"
         android:icon="@android:drawable/ic_lock_power_off"
         android:title="Ingyinn Swe" />
+
+
+    <item
+        android:id="@+id/thitlwin"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Thit Lwin" />
 
 </menu>
